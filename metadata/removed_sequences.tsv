@@ -4,4 +4,4 @@ ATAT1_CAEEL	O45100	Caenorhabditis elegans	not_tubulin	alpha-tubulin N-acetyltran
 Q383E4_TRYB2	Q383E4	Trypanosoma brucei brucei	not_gamma_tubulin	gamma-tubulin complex subunit; not gamma-tubulin itself
 Q389Z9_TRYB2	Q389Z9	Trypanosoma brucei brucei	not_tubulin	spindle pole body component; not tubulin
 ATAT_TRYB2	Q57XX3	Trypanosoma brucei brucei	not_tubulin	alpha-tubulin N-acetyltransferase; not tubulin
-TF2B_TRYBB	Q257B3	Trypanosoma brucei brucei	not_tubulin	transcription initiation factor; not tubulinoriginal_sequence_id	accession	organism	protein_type	reason_for_removal
+TF2B_TRYBB	Q257B3	Trypanosoma brucei brucei	not_tubulin	transcription initiation factor; not tubulin
