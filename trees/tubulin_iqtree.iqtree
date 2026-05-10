@@ -1,0 +1,328 @@
+IQ-TREE 2.0.7 built Apr  1 2024
+
+Input file name: alignments/tubulin_trimmed_msa.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 12345
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 30 sequences with 365 amino-acid sites
+Number of constant sites: 43 (= 11.7808% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 43 (= 11.7808% of all sites)
+Number of parsimony informative sites: 289
+Number of distinct site patterns: 340
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: LG+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+LG+I+G4           -9181.334   18480.668 - 1.98e-08   18503.882 - 0.000408   18710.762 +    0.955
+LG+G4             -9187.508   18491.016 - 1.12e-10   18513.382 - 3.53e-06   18717.210 -    0.038
+LG+R4             -9175.060   18476.119 - 1.93e-07   18502.910 - 0.000663   18721.813 -   0.0038
+LG+R3             -9181.049   18484.097 - 3.57e-09   18509.061 - 3.06e-05   18721.991 -  0.00348
+LG+R5             -9174.132   18478.264 - 6.59e-08   18506.960 - 8.75e-05   18731.758 - 2.64e-05
+LG+F+I+G4         -9144.605   18445.210 +    0.993   18488.301 +    0.985   18749.402 - 3.89e-09
+LG+F+G4           -9150.511   18455.021 -  0.00735   18496.875 -   0.0135   18755.313 - 2.02e-10
+LG+R2             -9211.755   18541.510 - 1.22e-21   18564.723 -  2.5e-17   18771.604 - 5.87e-14
+rtREV+F+I+G4      -9181.235   18518.470 - 1.23e-16   18561.561 - 1.22e-16   18822.662 -  4.8e-25
+rtREV+F+G4        -9185.926   18525.853 - 3.06e-18   18567.706 - 5.63e-18   18826.145 - 8.41e-26
+LG+I              -9293.853   18703.706 - 7.33e-57   18726.072 -  2.3e-52   18929.900 - 2.48e-48
+mtZOA+F+I+G4      -9238.561   18633.122 - 1.56e-41   18676.213 - 1.55e-41   18937.314 - 6.09e-50
+mtZOA+F+G4        -9241.759   18637.517 - 1.73e-42   18679.371 - 3.19e-42   18937.810 - 4.76e-50
+rtREV+I+G4        -9302.090   18722.181 - 7.13e-61   18745.394 - 1.47e-56   18952.275 - 3.44e-53
+rtREV+G4          -9307.090   18730.179 - 1.31e-62   18752.545 - 4.11e-58   18956.373 - 4.43e-54
+WAG+I+G4          -9309.132   18736.264 - 6.24e-64   18759.477 - 1.28e-59   18966.358 - 3.01e-56
+WAG+G4            -9317.824   18751.648 - 2.85e-67   18774.014 - 8.95e-63   18977.842 - 9.64e-59
+WAG+F+I+G4        -9269.605   18695.210 - 5.13e-55   18738.301 - 5.09e-55   18999.402 - 2.01e-63
+JTTDCMut+I+G4     -9330.330   18778.659 - 3.88e-73   18801.873 - 7.99e-69   19008.753 - 1.87e-65
+WAG+F+G4          -9277.268   18708.536 - 6.55e-58   18750.390 - 1.21e-57   19008.828 -  1.8e-65
+JTT+I+G4          -9331.803   18781.607 - 8.89e-74   18804.820 - 1.83e-69   19011.701 - 4.28e-66
+VT+I+G4           -9331.878   18781.756 - 8.26e-74   18804.969 -  1.7e-69   19011.850 - 3.98e-66
+JTTDCMut+G4       -9339.719   18795.437 - 8.83e-77   18817.803 - 2.77e-72   19021.631 - 2.99e-68
+VT+G4             -9340.448   18796.895 - 4.26e-77   18819.261 - 1.34e-72   19023.089 - 1.44e-68
+JTT+G4            -9341.154   18798.308 -  2.1e-77   18820.674 -  6.6e-73   19024.502 - 7.12e-69
+cpREV+I+G4        -9351.859   18821.718 - 1.73e-82   18844.931 - 3.57e-78   19051.812 - 8.35e-75
+mtInv+F+I+G4      -9298.579   18753.158 - 1.34e-67   18796.249 - 1.33e-67   19057.350 - 5.24e-76
+cpREV+G4          -9358.801   18833.602 - 4.56e-85   18855.968 - 1.43e-80   19059.796 - 1.54e-76
+mtInv+F+G4        -9303.463   18760.926 - 2.75e-69   18802.780 - 5.07e-69   19061.218 - 7.58e-77
+VT+F+I+G4         -9304.673   18765.345 - 3.02e-70   18808.436 -    3e-70   19069.537 - 1.18e-78
+JTTDCMut+F+I+G4   -9306.343   18768.686 - 5.69e-71   18811.777 - 5.64e-71   19072.878 - 2.23e-79
+cpREV+F+I+G4      -9307.405   18770.810 - 1.97e-71   18813.901 - 1.95e-71   19075.002 - 7.69e-80
+JTT+F+I+G4        -9309.413   18774.826 - 2.64e-72   18817.917 - 2.62e-72   19079.018 - 1.03e-80
+VT+F+G4           -9312.673   18779.345 - 2.76e-73   18821.199 - 5.08e-73   19079.637 - 7.58e-81
+JTTDCMut+F+G4     -9314.857   18783.715 -  3.1e-74   18825.568 - 5.71e-74   19084.007 - 8.53e-82
+cpREV+F+G4        -9314.973   18783.945 - 2.76e-74   18825.799 - 5.09e-74   19084.237 -  7.6e-82
+Blosum62+I+G4     -9369.353   18856.705 - 4.38e-90   18879.919 - 9.01e-86   19086.799 - 2.11e-82
+JTT+F+G4          -9317.930   18789.860 - 1.44e-75   18831.713 - 2.65e-75   19090.152 - 3.95e-83
+mtART+F+G4        -9318.669   18791.338 - 6.86e-76   18833.191 - 1.26e-75   19091.630 - 1.89e-83
+Blosum62+G4       -9374.844   18865.688 - 4.91e-92   18888.054 - 1.54e-87   19091.882 - 1.66e-83
+LG                -9379.056   18872.111 - 1.98e-93   18893.649 - 9.41e-89   19094.405 - 4.71e-84
+mtART+F+I+G4      -9317.249   18790.498 - 1.04e-75   18833.589 - 1.04e-75   19094.690 - 4.08e-84
+PMB+I+G4          -9387.862   18893.725 - 4.01e-98   18916.938 - 8.25e-94   19123.819 - 1.93e-90
+PMB+G4            -9394.012   18904.023 - 2.33e-100   18926.389 - 7.31e-96   19130.217 - 7.88e-92
+Dayhoff+F+I+G4    -9341.942   18839.885 - 1.97e-86   18882.976 - 1.95e-86   19144.077 - 7.71e-95
+DCMut+F+I+G4      -9342.606   18841.212 - 1.01e-86   18884.303 - 1.01e-86   19145.404 - 3.97e-95
+mtZOA+G4          -9405.650   18927.299 - 2.05e-105   18949.665 - 6.45e-101   19153.493 - 6.95e-97
+Blosum62+F+I+G4   -9348.104   18852.208 - 4.15e-89   18895.299 - 4.12e-89   19156.400 - 1.62e-97
+Dayhoff+F+G4      -9351.527   18857.054 - 3.68e-90   18898.908 - 6.78e-90   19157.346 - 1.01e-97
+mtZOA+I+G4        -9405.153   18928.306 - 1.24e-105   18951.519 - 2.55e-101   19158.400 - 5.98e-98
+DCMut+F+G4        -9352.187   18858.373 -  1.9e-90   18900.227 - 3.51e-90   19158.665 - 5.24e-98
+Dayhoff+I+G4      -9406.210   18930.419 - 4.31e-106   18953.632 - 8.87e-102   19160.513 - 2.08e-98
+Blosum62+F+G4     -9353.928   18861.856 - 3.34e-91   18903.710 - 6.15e-91   19162.148 - 9.18e-99
+DCMut+I+G4        -9407.044   18932.088 - 1.87e-106   18955.301 - 3.85e-102   19162.182 - 9.02e-99
+Dayhoff+G4        -9417.227   18950.453 - 1.93e-110   18972.819 - 6.05e-106   19176.647 - 6.52e-102
+DCMut+G4          -9418.071   18952.143 - 8.27e-111   18974.509 - 2.6e-106   19178.337 - 2.8e-102
+PMB+F+I+G4        -9374.944   18905.887 - 9.16e-101   18948.978 - 9.09e-101   19210.079 - 3.59e-109
+PMB+F+G4          -9381.118   18916.236 - 5.18e-103   18958.090 - 9.55e-103   19216.528 - 1.43e-110
+mtMet+F+I+G4      -9382.412   18920.824 - 5.23e-104   18963.915 - 5.19e-104   19225.016 - 2.05e-112
+mtMet+F+G4        -9386.805   18927.610 - 1.76e-105   18969.464 - 3.24e-105   19227.903 - 4.83e-113
+mtREV+F+I+G4      -9399.909   18955.819 - 1.32e-111   18998.910 - 1.31e-111   19260.011 - 5.15e-120
+mtREV+F+G4        -9405.807   18965.615 - 9.82e-114   19007.468 - 1.81e-113   19265.907 - 2.7e-121
+FLU+I+G4          -9532.239   19182.477 - 7.97e-161   19205.690 - 1.64e-156   19412.571 - 3.84e-153
+FLU+G4            -9538.921   19193.843 - 2.71e-163   19216.209 - 8.52e-159   19420.037 - 9.18e-155
+mtART+G4          -9549.402   19214.804 - 7.61e-168   19237.170 - 2.39e-163   19440.998 - 2.58e-159
+mtART+I+G4        -9549.583   19217.167 - 2.34e-168   19240.380 - 4.8e-164   19447.261 - 1.13e-160
+FLU+F+I+G4        -9496.413   19148.825 - 1.62e-153   19191.916 - 1.6e-153   19453.017 - 6.33e-162
+FLU+F+G4          -9501.189   19156.377 - 3.71e-155   19198.231 - 6.83e-155   19456.669 - 1.02e-162
+mtInv+G4          -9612.703   19341.407 - 2.46e-195   19363.773 - 7.71e-191   19567.601 - 8.31e-187
+mtMet+G4          -9612.931   19341.863 - 1.95e-195   19364.229 - 6.14e-191   19568.057 - 6.62e-187
+mtInv+I+G4        -9611.179   19340.359 - 4.15e-195   19363.572 - 8.53e-191   19570.453 -   2e-187
+mtMet+I+G4        -9611.591   19341.182 - 2.75e-195   19364.395 - 5.65e-191   19571.276 - 1.32e-187
+HIVb+F+I+G4       -9577.915   19311.831 - 6.49e-189   19354.922 - 6.45e-189   19616.023 - 2.54e-197
+mtVer+F+I+G4      -9583.725   19323.450 - 1.95e-191   19366.541 - 1.93e-191   19627.642 - 7.62e-200
+HIVb+F+G4         -9587.810   19329.620 - 8.9e-193   19371.474 - 1.64e-192   19629.912 - 2.45e-200
+mtVer+F+G4        -9588.970   19331.940 - 2.79e-193   19373.794 - 5.14e-193   19632.233 - 7.68e-201
+HIVb+I+G4         -9650.220   19418.439 - 4.6e-212   19441.653 - 9.46e-208   19648.533 - 2.22e-204
+HIVb+G4           -9660.375   19436.749 - 4.86e-216   19459.115 - 1.53e-211   19662.943 - 1.65e-207
+mtMAM+F+I+G4      -9619.933   19395.866 - 3.67e-207   19438.957 - 3.64e-207   19700.058 - 1.44e-215
+mtMAM+F+G4        -9623.366   19400.732 - 3.22e-208   19442.586 - 5.93e-208   19701.024 - 8.86e-216
+mtREV+G4          -9682.025   19480.050 - 1.92e-225   19502.416 - 6.04e-221   19706.244 - 6.51e-217
+mtREV+I+G4        -9679.482   19476.964 -   9e-225   19500.177 - 1.85e-220   19707.058 - 4.33e-217
+mtVer+G4          -9812.792   19741.585 - 3.11e-282   19763.951 - 9.77e-278   19967.779 - 1.05e-273
+mtVer+I+G4        -9811.285   19740.571 - 5.16e-282   19763.784 - 1.06e-277   19970.665 - 2.49e-274
+mtMAM+G4          -9883.677   19883.354 - 5.1e-313   19905.720 - 1.6e-308   20109.548 - 1.73e-304
+mtMAM+I+G4        -9882.768   19883.535 - 4.66e-313   19906.748 - 9.59e-309   20113.629 - 2.25e-305
+HIVw+F+I+G4       -9966.579   20089.158 -        0   20132.249 -        0   20393.350 -        0
+HIVw+F+G4         -9978.037   20110.075 -        0   20151.929 -        0   20410.367 -        0
+HIVw+I+G4        -10130.386   20378.773 -        0   20401.986 -        0   20608.866 -        0
+HIVw+G4          -10141.631   20399.262 -        0   20421.628 -        0   20625.456 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+I+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.0647
+Gamma shape alpha: 2.0731
+
+ Category  Relative_rate  Proportion
+  0         0              0.0647
+  1         0.3227         0.2338
+  2         0.7084         0.2338
+  3         1.1458         0.2338
+  4         2.0997         0.2338
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -9181.3231 (s.e. 259.4711)
+Unconstrained log-likelihood (without tree): -2103.8444
+Number of free parameters (#branches + #model parameters): 59
+Akaike information criterion (AIC) score: 18480.6462
+Corrected Akaike information criterion (AICc) score: 18503.8593
+Bayesian information criterion (BIC) score: 18710.7401
+
+Total tree length (sum of branch lengths): 6.9623
+Sum of internal branch lengths: 2.7826 (39.9668% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Arabidopsis_thaliana_alpha_tubulin_P11139' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++--Arabidopsis_thaliana_alpha_tubulin_P11139
+|
+|           +--Caenorhabditis_elegans_alpha_tubulin_P34690
+|        +--| (32.8/51)
+|        |  |  +--Schizosaccharomyces_pombe_alpha_tubulin_P04688
+|        |  +--| (99.8/88)
+|        |     +--Saccharomyces_cerevisiae_alpha_tubulin_P09733
+|     +--| (99.6/86)
+|     |  |  +--Drosophila_melanogaster_alpha_tubulin_P06603
+|     |  +--| (88.9/96)
+|     |     |  +**Homo_sapiens_alpha_tubulin_Q71U36
+|     |     +--| (76.8/94)
+|     |        +**Mus_musculus_alpha_tubulin_P68369
+|  +--| (88.7/96)
+|  |  |  +--Dictyostelium_discoideum_alpha_tubulin_P32255
+|  |  +--| (97/86)
+|  |     |                                    +--Arabidopsis_thaliana_beta_tubulin_P12411
+|  |     |                                 +--| (94.4/99)
+|  |     |                                 |  +--Chlamydomonas_reinhardtii_beta_tubulin_P04690
+|  |     |                              +--| (83.5/95)
+|  |     |                              |  +--Trypanosoma_brucei_complex_beta_tubulin_P04107
+|  |     |                           +--| (57.7/73)
+|  |     |                           |  +---Dictyostelium_discoideum_beta_tubulin_P32256
+|  |     |                        +--| (98.7/86)
+|  |     |                        |  |  +--Caenorhabditis_elegans_beta_tubulin_P12456
+|  |     |                        |  +--| (93.3/78)
+|  |     |                        |     |  +--Drosophila_melanogaster_beta_tubulin_Q24560
+|  |     |                        |     +--| (77.3/65)
+|  |     |                        |        |   +--Homo_sapiens_beta_tubulin_Q9H4B7
+|  |     |                        |        +---| (100/100)
+|  |     |                        |            +--Mus_musculus_beta_tubulin_A2AQ07
+|  |     |                     +--| (43.3/62)
+|  |     |                     |  +--Schizosaccharomyces_pombe_beta_tubulin_P05219
+|  |     |             +-------| (100/100)
+|  |     |             |       +--Saccharomyces_cerevisiae_beta_tubulin_P02557
+|  |     +-------------| (100/100)
+|  |                   |                         +--Arabidopsis_thaliana_gamma_tubulin_P38557
+|  |                   |                      +--| (93.8/92)
+|  |                   |                      |  +----Chlamydomonas_reinhardtii_gamma_tubulin_Q39582
+|  |                   |                   +--| (84.6/57)
+|  |                   |                   |  |        +--Drosophila_melanogaster_gamma_tubulin_P23257
+|  |                   |                   |  |     +--| (95.8/87)
+|  |                   |                   |  |     |  |  +--Homo_sapiens_gamma_tubulin_P23258
+|  |                   |                   |  |     |  +--| (97.1/100)
+|  |                   |                   |  |     |     +--Mus_musculus_gamma_tubulin_P83887
+|  |                   |                   |  |  +--| (85.4/60)
+|  |                   |                   |  |  |  +----Schizosaccharomyces_pombe_gamma_tubulin_P25295
+|  |                   |                   |  +--| (91.9/56)
+|  |                   |                   |     +-----Trypanosoma_brucei_complex_gamma_tubulin_D6XD01
+|  |                   |                +--| (38.2/64)
+|  |                   |                |  +----Dictyostelium_discoideum_gamma_tubulin_Q55AR3
+|  |                   |             +--| (45.1/73)
+|  |                   |             |  +------------------------Saccharomyces_cerevisiae_gamma_tubulin_P53378
+|  |                   +-------------| (100/100)
+|  |                                 +-----------------Caenorhabditis_elegans_gamma_tubulin_P34475
++--| (75.8/89)
+|  +--Trypanosoma_brucei_complex_alpha_tubulin_P04106
+|
++--Chlamydomonas_reinhardtii_alpha_tubulin_P09204
+
+Tree in newick format:
+
+(Arabidopsis_thaliana_alpha_tubulin_P11139:0.0860051267,((((Caenorhabditis_elegans_alpha_tubulin_P34690:0.0658343036,(Schizosaccharomyces_pombe_alpha_tubulin_P04688:0.0962504376,Saccharomyces_cerevisiae_alpha_tubulin_P09733:0.1561200095)99.8/88:0.0952383470)32.8/51:0.0380932779,(Drosophila_melanogaster_alpha_tubulin_P06603:0.0119453996,(Homo_sapiens_alpha_tubulin_Q71U36:0.0000010008,Mus_musculus_alpha_tubulin_P68369:0.0000010008)76.8/94:0.0049309705)88.9/96:0.0167659763)99.6/86:0.0957568872,(Dictyostelium_discoideum_alpha_tubulin_P32255:0.1530175122,(((((((Arabidopsis_thaliana_beta_tubulin_P12411:0.0610458790,Chlamydomonas_reinhardtii_beta_tubulin_P04690:0.0113944429)94.4/99:0.0272143775,Trypanosoma_brucei_complex_beta_tubulin_P04107:0.0862492135)83.5/95:0.0237800808,Dictyostelium_discoideum_beta_tubulin_P32256:0.1851220906)57.7/73:0.0284871250,(Caenorhabditis_elegans_beta_tubulin_P12456:0.0224165746,(Drosophila_melanogaster_beta_tubulin_Q24560:0.0092678818,(Homo_sapiens_beta_tubulin_Q9H4B7:0.0334600662,Mus_musculus_beta_tubulin_A2AQ07:0.0152251846)100/100:0.1795127894)77.3/65:0.0054395794)93.3/78:0.0240733711)98.7/86:0.0732544474,Schizosaccharomyces_pombe_beta_tubulin_P05219:0.1417669213)43.3/62:0.0574633772,Saccharomyces_cerevisiae_beta_tubulin_P02557:0.0907283386)100/100:0.3526812027,(((((Arabidopsis_thaliana_gamma_tubulin_P38557:0.0879799439,Chlamydomonas_reinhardtii_gamma_tubulin_Q39582:0.1997732949)93.8/92:0.0496194198,(((Drosophila_melanogaster_gamma_tubulin_P23257:0.1340348488,(Homo_sapiens_gamma_tubulin_P23258:0.0043579332,Mus_musculus_gamma_tubulin_P83887:0.0094846378)97.1/100:0.0534239933)95.8/87:0.0617011385,Schizosaccharomyces_pombe_gamma_tubulin_P25295:0.2100807076)85.4/60:0.0359090031,Trypanosoma_brucei_complex_gamma_tubulin_D6XD01:0.2750992994)91.9/56:0.0526574045)84.6/57:0.0604412086,Dictyostelium_discoideum_gamma_tubulin_Q55AR3:0.2018225362)38.2/64:0.0769768894,Saccharomyces_cerevisiae_gamma_tubulin_P53378:0.9919252939)45.1/73:0.0796105400,Caenorhabditis_elegans_gamma_tubulin_P34475:0.7477084534)100/100:0.5819837633)100/100:0.5567663787)97/86:0.1125833517)88.7/96:0.0283545086,Trypanosoma_brucei_complex_alpha_tubulin_P04106:0.0547165793)75.8/89:0.0148182875,Chlamydomonas_reinhardtii_alpha_tubulin_P09204:0.0319213414);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -9181.324158
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Arabidopsis_thaliana_alpha_tubulin_P11139
+|
+|           +--Caenorhabditis_elegans_alpha_tubulin_P34690
+|        +--| (51)
+|        |  |  +--Schizosaccharomyces_pombe_alpha_tubulin_P04688
+|        |  +--| (88)
+|        |     +--Saccharomyces_cerevisiae_alpha_tubulin_P09733
+|     +--| (86)
+|     |  |  +--Drosophila_melanogaster_alpha_tubulin_P06603
+|     |  +--| (96)
+|     |     |  +--Homo_sapiens_alpha_tubulin_Q71U36
+|     |     +--| (94)
+|     |        +--Mus_musculus_alpha_tubulin_P68369
+|  +--| (96)
+|  |  |  +--Dictyostelium_discoideum_alpha_tubulin_P32255
+|  |  +--| (86)
+|  |     |                                    +--Arabidopsis_thaliana_beta_tubulin_P12411
+|  |     |                                 +--| (99)
+|  |     |                                 |  +--Chlamydomonas_reinhardtii_beta_tubulin_P04690
+|  |     |                              +--| (95)
+|  |     |                              |  +--Trypanosoma_brucei_complex_beta_tubulin_P04107
+|  |     |                           +--| (73)
+|  |     |                           |  +---Dictyostelium_discoideum_beta_tubulin_P32256
+|  |     |                        +--| (86)
+|  |     |                        |  |  +--Caenorhabditis_elegans_beta_tubulin_P12456
+|  |     |                        |  +--| (78)
+|  |     |                        |     |  +--Drosophila_melanogaster_beta_tubulin_Q24560
+|  |     |                        |     +--| (65)
+|  |     |                        |        |   +--Homo_sapiens_beta_tubulin_Q9H4B7
+|  |     |                        |        +---| (100)
+|  |     |                        |            +--Mus_musculus_beta_tubulin_A2AQ07
+|  |     |                     +--| (62)
+|  |     |                     |  +--Schizosaccharomyces_pombe_beta_tubulin_P05219
+|  |     |             +-------| (100)
+|  |     |             |       +--Saccharomyces_cerevisiae_beta_tubulin_P02557
+|  |     +-------------| (100)
+|  |                   |                         +--Arabidopsis_thaliana_gamma_tubulin_P38557
+|  |                   |                      +--| (92)
+|  |                   |                      |  +----Chlamydomonas_reinhardtii_gamma_tubulin_Q39582
+|  |                   |                   +--| (57)
+|  |                   |                   |  |        +--Drosophila_melanogaster_gamma_tubulin_P23257
+|  |                   |                   |  |     +--| (87)
+|  |                   |                   |  |     |  |  +--Homo_sapiens_gamma_tubulin_P23258
+|  |                   |                   |  |     |  +--| (100)
+|  |                   |                   |  |     |     +--Mus_musculus_gamma_tubulin_P83887
+|  |                   |                   |  |  +--| (60)
+|  |                   |                   |  |  |  +----Schizosaccharomyces_pombe_gamma_tubulin_P25295
+|  |                   |                   |  +--| (56)
+|  |                   |                   |     +-----Trypanosoma_brucei_complex_gamma_tubulin_D6XD01
+|  |                   |                +--| (64)
+|  |                   |                |  +----Dictyostelium_discoideum_gamma_tubulin_Q55AR3
+|  |                   |             +--| (73)
+|  |                   |             |  +------------------------Saccharomyces_cerevisiae_gamma_tubulin_P53378
+|  |                   +-------------| (100)
+|  |                                 +-----------------Caenorhabditis_elegans_gamma_tubulin_P34475
++--| (89)
+|  +--Trypanosoma_brucei_complex_alpha_tubulin_P04106
+|
++--Chlamydomonas_reinhardtii_alpha_tubulin_P09204
+
+
+Consensus tree in newick format: 
+
+(Arabidopsis_thaliana_alpha_tubulin_P11139:0.0860195772,((((Caenorhabditis_elegans_alpha_tubulin_P34690:0.0658494781,(Schizosaccharomyces_pombe_alpha_tubulin_P04688:0.0962631858,Saccharomyces_cerevisiae_alpha_tubulin_P09733:0.1561458467)88:0.0952469736)51:0.0380845171,(Drosophila_melanogaster_alpha_tubulin_P06603:0.0119467491,(Homo_sapiens_alpha_tubulin_Q71U36:0.0000023402,Mus_musculus_alpha_tubulin_P68369:0.0000023402)94:0.0049313885)96:0.0167693703)86:0.0957742053,(Dictyostelium_discoideum_alpha_tubulin_P32255:0.1527898483,(((((((Arabidopsis_thaliana_beta_tubulin_P12411:0.0610525247,Chlamydomonas_reinhardtii_beta_tubulin_P04690:0.0113958462)99:0.0272190901,Trypanosoma_brucei_complex_beta_tubulin_P04107:0.0862566185)95:0.0237806000,Dictyostelium_discoideum_beta_tubulin_P32256:0.1851480815)73:0.0284874365,(Caenorhabditis_elegans_beta_tubulin_P12456:0.0224193361,(Drosophila_melanogaster_beta_tubulin_Q24560:0.0092678842,(Homo_sapiens_beta_tubulin_Q9H4B7:0.0334611671,Mus_musculus_beta_tubulin_A2AQ07:0.0152264340)100:0.1795323062)65:0.0054398394)78:0.0240772143)86:0.0732657303,Schizosaccharomyces_pombe_beta_tubulin_P05219:0.1417828021)62:0.0575169229,Saccharomyces_cerevisiae_beta_tubulin_P02557:0.0906421247)100:0.3527321397,(((((Arabidopsis_thaliana_gamma_tubulin_P38557:0.0879993349,Chlamydomonas_reinhardtii_gamma_tubulin_Q39582:0.1998426282)92:0.0496425682,(((Drosophila_melanogaster_gamma_tubulin_P23257:0.1341102031,(Homo_sapiens_gamma_tubulin_P23258:0.0043557220,Mus_musculus_gamma_tubulin_P83887:0.0094923215)100:0.0534148190)87:0.0617230947,Schizosaccharomyces_pombe_gamma_tubulin_P25295:0.2101813784)60:0.0358945423,Trypanosoma_brucei_complex_gamma_tubulin_D6XD01:0.2752175129)56:0.0526654869)57:0.0603449840,Dictyostelium_discoideum_gamma_tubulin_Q55AR3:0.2019740402)64:0.0770236434,Saccharomyces_cerevisiae_gamma_tubulin_P53378:0.9922896905)73:0.0792797488,Caenorhabditis_elegans_gamma_tubulin_P34475:0.7481142672)100:0.5822441535)100:0.5568417812)86:0.1127429415)96:0.0283544828,Trypanosoma_brucei_complex_alpha_tubulin_P04106:0.0547290073)89:0.0148173194,Chlamydomonas_reinhardtii_alpha_tubulin_P09204:0.0319272318);
+
+TIME STAMP
+----------
+
+Date and time: Sun May 10 19:26:57 2026
+Total CPU time used: 141.58952 seconds (0h:2m:21s)
+Total wall-clock time used: 35.91821941 seconds (0h:0m:35s)
+

@@ -1,0 +1,214 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=30;
+TAXLABELS
+[1] 'Arabidopsis_thaliana_alpha_tubulin_P11139'
+[2] 'Caenorhabditis_elegans_alpha_tubulin_P34690'
+[3] 'Drosophila_melanogaster_alpha_tubulin_P06603'
+[4] 'Homo_sapiens_alpha_tubulin_Q71U36'
+[5] 'Mus_musculus_alpha_tubulin_P68369'
+[6] 'Chlamydomonas_reinhardtii_alpha_tubulin_P09204'
+[7] 'Trypanosoma_brucei_complex_alpha_tubulin_P04106'
+[8] 'Schizosaccharomyces_pombe_alpha_tubulin_P04688'
+[9] 'Saccharomyces_cerevisiae_alpha_tubulin_P09733'
+[10] 'Dictyostelium_discoideum_alpha_tubulin_P32255'
+[11] 'Arabidopsis_thaliana_beta_tubulin_P12411'
+[12] 'Chlamydomonas_reinhardtii_beta_tubulin_P04690'
+[13] 'Trypanosoma_brucei_complex_beta_tubulin_P04107'
+[14] 'Caenorhabditis_elegans_beta_tubulin_P12456'
+[15] 'Drosophila_melanogaster_beta_tubulin_Q24560'
+[16] 'Homo_sapiens_beta_tubulin_Q9H4B7'
+[17] 'Mus_musculus_beta_tubulin_A2AQ07'
+[18] 'Schizosaccharomyces_pombe_beta_tubulin_P05219'
+[19] 'Dictyostelium_discoideum_beta_tubulin_P32256'
+[20] 'Saccharomyces_cerevisiae_beta_tubulin_P02557'
+[21] 'Arabidopsis_thaliana_gamma_tubulin_P38557'
+[22] 'Drosophila_melanogaster_gamma_tubulin_P23257'
+[23] 'Homo_sapiens_gamma_tubulin_P23258'
+[24] 'Mus_musculus_gamma_tubulin_P83887'
+[25] 'Schizosaccharomyces_pombe_gamma_tubulin_P25295'
+[26] 'Chlamydomonas_reinhardtii_gamma_tubulin_Q39582'
+[27] 'Trypanosoma_brucei_complex_gamma_tubulin_D6XD01'
+[28] 'Dictyostelium_discoideum_gamma_tubulin_Q55AR3'
+[29] 'Caenorhabditis_elegans_gamma_tubulin_P34475'
+[30] 'Saccharomyces_cerevisiae_gamma_tubulin_P53378'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=30 nsplits=169;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	100	 4,
+	100	 5,
+	94	 4 5,
+	96	 3 4 5,
+	37	 2 3 4 5,
+	100	 8,
+	100	 9,
+	88	 8 9,
+	86	 2 3 4 5 8 9,
+	100	 10,
+	100	 11,
+	100	 12,
+	99	 11 12,
+	100	 13,
+	95	 11 12 13,
+	100	 19,
+	73	 11 12 13 19,
+	100	 15,
+	6	 11 12 13 15 19,
+	100	 14,
+	8	 11 12 13 14 15 19,
+	100	 16,
+	100	 17,
+	100	 16 17,
+	86	 11 12 13 14 15 16 17 19,
+	100	 18,
+	62	 11 12 13 14 15 16 17 18 19,
+	100	 20,
+	100	 11 12 13 14 15 16 17 18 19 20,
+	100	 21,
+	100	 26,
+	92	 21 26,
+	100	 28,
+	100	 30,
+	22	 28 30,
+	13	 21 26 28 30,
+	100	 27,
+	12	 21 26 27 28 30,
+	100	 25,
+	10	 21 25 26 27 28 30,
+	100	 22,
+	100	 23,
+	100	 24,
+	100	 23 24,
+	87	 22 23 24,
+	100	 29,
+	12	 22 23 24 29,
+	100	 21 22 23 24 25 26 27 28 29 30,
+	100	 1 2 3 4 5 6 7 8 9 10,
+	86	 1 2 3 4 5 6 7 8 9,
+	96	 1 6 7,
+	100	 7,
+	89	 1 6,
+	100	 6,
+	100	 1,
+	51	 2 8 9,
+	65	 15 16 17,
+	78	 14 15 16 17,
+	26	 21 26 28,
+	24	 21 26 27 28,
+	17	 21 25 26 27 28,
+	64	 21 22 23 24 25 26 27 28,
+	10	 29 30,
+	38	 18 20,
+	3	 25 27,
+	73	 21 22 23 24 25 26 27 28 30,
+	3	 11 12 19,
+	60	 22 23 24 25,
+	56	 22 23 24 25 27,
+	57	 21 22 23 24 25 26 27,
+	7	 14 16 17,
+	0	 2 4 5,
+	4	 21 28,
+	3	 26 27,
+	12	 14 15,
+	5	 11 12 13 14 15,
+	4	 16 17 19,
+	1	 21 22 23 24 25 26,
+	10	 21 22 23 24 25 26 27 28 29,
+	12	 1 2 3 4 5 6 7 8 10,
+	13	 1 2 3 4 5 6 7 10,
+	14	 1 6 7 10,
+	10	 6 7,
+	1	 11 13,
+	1	 14 15 16 17 18 20,
+	2	 11 12 13 14 15 16 17 18 20,
+	2	 13 19,
+	3	 21 22 23 24 25 26 27 30,
+	21	 11 12 13 14 15 16 17,
+	8	 11 12 13 14 15 18 19 20,
+	8	 11 12 13 18 19 20,
+	4	 11 12 13 14 18 19 20,
+	3	 2 3 4 5 7 8 9,
+	4	 11 12 13 15 18 19 20,
+	1	 11 12 13 16 17 19,
+	0	 11 12 13 15 16 17 19,
+	10	 22 29,
+	6	 21 22 23 24 26 27 28 29,
+	1	 22 23 24 25 26 27,
+	2	 21 26 27,
+	11	 1 3 4 5 6 7 10,
+	2	 2 4 5 8 9,
+	2	 21 22 23 24 26 27 28 29 30,
+	4	 3 4,
+	2	 22 23 24 27,
+	1	 22 23 24 30,
+	1	 14 15 16 17 19,
+	0	 23 24 25,
+	0	 22 23 24 25 27 29 30,
+	1	 21 22 23 24 25 26 27 29 30,
+	2	 11 12 13 14 15 16 17 18,
+	1	 22 25,
+	0	 11 12 13 14,
+	1	 23 24 30,
+	0	 1 2 3 4 5 6 7 9 10,
+	1	 28 29 30,
+	0	 21 23 24 25 26 27 28 30,
+	0	 1 7,
+	1	 11 12 13 15,
+	1	 3 5,
+	1	 2 3 4 5 6 7 8 9,
+	1	 18 19 20,
+	0	 14 15 16 17 18 19 20,
+	1	 25 30,
+	1	 15 16 17 19,
+	2	 27 30,
+	2	 22 23 24 25 27 30,
+	1	 25 27 30,
+	0	 22 23 24 25 30,
+	1	 2 3 8 9,
+	1	 21 28 30,
+	0	 21 22 25 26 27 28,
+	0	 21 22 23 24 26 27 28,
+	2	 1 2 3 4 5 6 7,
+	2	 1 3 4 5 6 7,
+	0	 14 15 16 17 18,
+	0	 3 4 5 8 9,
+	0	 2 4 8 9,
+	0	 14 16 17 19,
+	0	 14 15 18 20,
+	0	 11 12 13 14 15 18 20,
+	0	 1 6 10,
+	0	 2 3 4 8 9,
+	1	 11 12 13 14 19,
+	0	 27 28,
+	1	 1 2 3 4 5 6 8 9,
+	0	 2 3 4 5 8 9 10,
+	0	 21 25 26 28 30,
+	1	 21 22 23 24 25 27,
+	0	 11 12 13 14 15 16 17 19 20,
+	0	 1 3 6 7 10,
+	0	 11 12 13 15 16 17,
+	0	 22 23 24 29 30,
+	0	 23 24 29,
+	0	 21 22 23 24 25 27 30,
+	0	 21 23 24 25 26 27 28,
+	0	 22 23 24 25 29,
+	0	 21 26 27 28 29 30,
+	0	 21 25 26 27 28 29 30,
+	0	 22 23 24 25 28 30,
+	0	 23 24 27,
+	0	 16 17 18,
+	0	 15 16 17 18,
+	0	 13 14 15 16 17 18 20,
+	0	 22 30,
+	0	 21 25 26 28,
+	0	 14 18 20,
+;
+END; [Splits]
+

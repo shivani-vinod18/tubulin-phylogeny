@@ -1,0 +1,267 @@
+IQ-TREE multicore version 2.0.7 for Linux 64-bit built Apr  1 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    LAPTOP-7HQJVOIE (AVX512, FMA3, 7 GB RAM)
+Command: iqtree2 -s alignments/tubulin_trimmed_msa.fasta -st AA -m MFP -B 1000 -alrt 1000 -T AUTO --seed 12345 --prefix trees/tubulin_iqtree
+Seed:    12345 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun May 10 19:25:34 2026
+Kernel:  AVX+FMA - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file alignments/tubulin_trimmed_msa.fasta ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 30 sequences with 365 columns, 340 distinct patterns
+289 parsimony-informative, 33 singleton sites, 43 constant sites
+                                                 Gap/Ambiguity  Composition  p-value
+   1  Arabidopsis_thaliana_alpha_tubulin_P11139          0.82%    passed     99.98%
+   2  Caenorhabditis_elegans_alpha_tubulin_P34690        0.82%    passed     97.81%
+   3  Drosophila_melanogaster_alpha_tubulin_P06603       0.82%    passed     92.85%
+   4  Homo_sapiens_alpha_tubulin_Q71U36                  0.82%    passed     95.07%
+   5  Mus_musculus_alpha_tubulin_P68369                  0.82%    passed     95.07%
+   6  Chlamydomonas_reinhardtii_alpha_tubulin_P09204     0.82%    passed     99.92%
+   7  Trypanosoma_brucei_complex_alpha_tubulin_P04106    0.82%    passed     96.59%
+   8  Schizosaccharomyces_pombe_alpha_tubulin_P04688     0.82%    passed     99.57%
+   9  Saccharomyces_cerevisiae_alpha_tubulin_P09733      0.82%    passed     99.84%
+  10  Dictyostelium_discoideum_alpha_tubulin_P32255      0.55%    passed     97.85%
+  11  Arabidopsis_thaliana_beta_tubulin_P12411           0.82%    passed     95.41%
+  12  Chlamydomonas_reinhardtii_beta_tubulin_P04690      0.82%    passed     97.38%
+  13  Trypanosoma_brucei_complex_beta_tubulin_P04107     0.82%    passed     81.35%
+  14  Caenorhabditis_elegans_beta_tubulin_P12456         0.82%    passed     99.74%
+  15  Drosophila_melanogaster_beta_tubulin_Q24560        0.82%    passed     99.45%
+  16  Homo_sapiens_beta_tubulin_Q9H4B7                   0.82%    passed     99.81%
+  17  Mus_musculus_beta_tubulin_A2AQ07                   0.82%    passed     99.65%
+  18  Schizosaccharomyces_pombe_beta_tubulin_P05219      0.82%    passed     73.93%
+  19  Dictyostelium_discoideum_beta_tubulin_P32256       0.82%    passed     98.81%
+  20  Saccharomyces_cerevisiae_beta_tubulin_P02557       0.82%    passed     99.65%
+  21  Arabidopsis_thaliana_gamma_tubulin_P38557          0.82%    passed     98.80%
+  22  Drosophila_melanogaster_gamma_tubulin_P23257       0.82%    passed     93.86%
+  23  Homo_sapiens_gamma_tubulin_P23258                  0.82%    passed     94.63%
+  24  Mus_musculus_gamma_tubulin_P83887                  0.82%    passed     95.07%
+  25  Schizosaccharomyces_pombe_gamma_tubulin_P25295     0.82%    passed     68.58%
+  26  Chlamydomonas_reinhardtii_gamma_tubulin_Q39582     0.82%    passed     95.27%
+  27  Trypanosoma_brucei_complex_gamma_tubulin_D6XD01    0.82%    passed     98.63%
+  28  Dictyostelium_discoideum_gamma_tubulin_Q55AR3      1.92%    passed     77.53%
+  29  Caenorhabditis_elegans_gamma_tubulin_P34475        1.64%    passed     34.66%
+  30  Saccharomyces_cerevisiae_gamma_tubulin_P53378      1.37%    passed     10.20%
+****  TOTAL                                              0.89%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: Mus_musculus_alpha_tubulin_P68369 is identical to Homo_sapiens_alpha_tubulin_Q71U36 but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+Measuring multi-threading efficiency up to 8 CPU cores
+Increase to 10 rounds for branch lengths
+35 trees examined
+Threads: 1 / Time: 8.138 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -14984
+Threads: 2 / Time: 5.172 sec / Speedup: 1.574 / Efficiency: 79% / LogL: -14984
+Threads: 3 / Time: 5.000 sec / Speedup: 1.628 / Efficiency: 54% / LogL: -14984
+Threads: 4 / Time: 3.684 sec / Speedup: 2.209 / Efficiency: 55% / LogL: -14984
+Threads: 5 / Time: 3.494 sec / Speedup: 2.330 / Efficiency: 47% / LogL: -14984
+BEST NUMBER OF THREADS: 4
+
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -9181.477
+Optimal log-likelihood: -9181.338
+Proportion of invariable sites: 0.062
+Gamma shape alpha: 2.040
+Parameters optimization took 1 rounds (0.050 sec)
+Time for fast ML tree search: 0.452 seconds
+
+NOTE: ModelFinder requires 18 MB RAM!
+ModelFinder will test up to 546 protein models (sample size: 365) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            9379.056     57  18872.111    18893.649    19094.405
+  2  LG+I          9293.853     58  18703.706    18726.072    18929.900
+  3  LG+G4         9187.508     58  18491.016    18513.382    18717.210
+  4  LG+I+G4       9181.334     59  18480.668    18503.882    18710.762
+  5  LG+R2         9211.755     59  18541.510    18564.723    18771.604
+  6  LG+R3         9181.049     61  18484.097    18509.061    18721.991
+  7  LG+R4         9175.060     63  18476.119    18502.910    18721.813
+  8  LG+R5         9174.132     65  18478.264    18506.960    18731.758
+ 16  LG+F+G4       9150.511     77  18455.021    18496.875    18755.313
+ 17  LG+F+I+G4     9144.605     78  18445.210    18488.301    18749.402
+ 29  WAG+G4        9317.824     58  18751.648    18774.014    18977.842
+ 30  WAG+I+G4      9309.132     59  18736.264    18759.477    18966.358
+ 42  WAG+F+G4      9277.268     77  18708.536    18750.390    19008.828
+ 43  WAG+F+I+G4    9269.605     78  18695.210    18738.301    18999.402
+ 55  JTT+G4        9341.154     58  18798.308    18820.674    19024.502
+ 56  JTT+I+G4      9331.803     59  18781.607    18804.820    19011.701
+ 68  JTT+F+G4      9317.930     77  18789.860    18831.713    19090.152
+ 69  JTT+F+I+G4    9309.413     78  18774.826    18817.917    19079.018
+ 81  JTTDCMut+G4   9339.719     58  18795.437    18817.803    19021.631
+ 82  JTTDCMut+I+G4 9330.330     59  18778.659    18801.873    19008.753
+ 94  JTTDCMut+F+G4 9314.857     77  18783.715    18825.568    19084.007
+ 95  JTTDCMut+F+I+G4 9306.343     78  18768.686    18811.777    19072.878
+107  DCMut+G4      9418.071     58  18952.143    18974.509    19178.337
+108  DCMut+I+G4    9407.044     59  18932.088    18955.301    19162.182
+120  DCMut+F+G4    9352.187     77  18858.373    18900.227    19158.665
+121  DCMut+F+I+G4  9342.606     78  18841.212    18884.303    19145.404
+133  VT+G4         9340.448     58  18796.895    18819.261    19023.089
+134  VT+I+G4       9331.878     59  18781.756    18804.969    19011.850
+146  VT+F+G4       9312.673     77  18779.345    18821.199    19079.637
+147  VT+F+I+G4     9304.673     78  18765.345    18808.436    19069.537
+159  PMB+G4        9394.012     58  18904.023    18926.389    19130.217
+160  PMB+I+G4      9387.862     59  18893.725    18916.938    19123.819
+172  PMB+F+G4      9381.118     77  18916.236    18958.090    19216.528
+173  PMB+F+I+G4    9374.944     78  18905.887    18948.978    19210.079
+185  Blosum62+G4   9374.844     58  18865.688    18888.054    19091.882
+186  Blosum62+I+G4 9369.353     59  18856.705    18879.919    19086.799
+198  Blosum62+F+G4 9353.928     77  18861.856    18903.710    19162.148
+199  Blosum62+F+I+G4 9348.104     78  18852.208    18895.299    19156.400
+211  Dayhoff+G4    9417.227     58  18950.453    18972.819    19176.647
+212  Dayhoff+I+G4  9406.210     59  18930.419    18953.632    19160.513
+224  Dayhoff+F+G4  9351.527     77  18857.054    18898.908    19157.346
+225  Dayhoff+F+I+G4 9341.942     78  18839.885    18882.976    19144.077
+237  mtREV+G4      9682.025     58  19480.050    19502.416    19706.244
+238  mtREV+I+G4    9679.482     59  19476.964    19500.177    19707.058
+250  mtREV+F+G4    9405.807     77  18965.615    19007.468    19265.907
+251  mtREV+F+I+G4  9399.909     78  18955.819    18998.910    19260.011
+263  mtART+G4      9549.402     58  19214.804    19237.170    19440.998
+264  mtART+I+G4    9549.583     59  19217.167    19240.380    19447.261
+276  mtART+F+G4    9318.669     77  18791.338    18833.191    19091.630
+277  mtART+F+I+G4  9317.249     78  18790.498    18833.589    19094.690
+289  mtZOA+G4      9405.650     58  18927.299    18949.665    19153.493
+290  mtZOA+I+G4    9405.153     59  18928.306    18951.519    19158.400
+302  mtZOA+F+G4    9241.759     77  18637.517    18679.371    18937.810
+303  mtZOA+F+I+G4  9238.561     78  18633.122    18676.213    18937.314
+315  mtMet+G4      9612.931     58  19341.863    19364.229    19568.057
+316  mtMet+I+G4    9611.591     59  19341.182    19364.395    19571.276
+328  mtMet+F+G4    9386.805     77  18927.610    18969.464    19227.903
+329  mtMet+F+I+G4  9382.412     78  18920.824    18963.915    19225.016
+341  mtVer+G4      9812.792     58  19741.585    19763.951    19967.779
+342  mtVer+I+G4    9811.285     59  19740.571    19763.784    19970.665
+354  mtVer+F+G4    9588.970     77  19331.940    19373.794    19632.233
+355  mtVer+F+I+G4  9583.725     78  19323.450    19366.541    19627.642
+367  mtInv+G4      9612.703     58  19341.407    19363.773    19567.601
+368  mtInv+I+G4    9611.179     59  19340.359    19363.572    19570.453
+380  mtInv+F+G4    9303.463     77  18760.926    18802.780    19061.218
+381  mtInv+F+I+G4  9298.579     78  18753.158    18796.249    19057.350
+393  mtMAM+G4      9883.677     58  19883.354    19905.720    20109.548
+394  mtMAM+I+G4    9882.768     59  19883.535    19906.748    20113.629
+406  mtMAM+F+G4    9623.366     77  19400.732    19442.586    19701.024
+407  mtMAM+F+I+G4  9619.933     78  19395.866    19438.957    19700.058
+419  HIVb+G4       9660.375     58  19436.749    19459.115    19662.943
+420  HIVb+I+G4     9650.220     59  19418.439    19441.653    19648.533
+432  HIVb+F+G4     9587.810     77  19329.620    19371.474    19629.912
+433  HIVb+F+I+G4   9577.915     78  19311.831    19354.922    19616.023
+445  HIVw+G4       10141.631    58  20399.262    20421.628    20625.456
+446  HIVw+I+G4     10130.386    59  20378.773    20401.986    20608.866
+458  HIVw+F+G4     9978.037     77  20110.075    20151.929    20410.367
+459  HIVw+F+I+G4   9966.579     78  20089.158    20132.249    20393.350
+471  FLU+G4        9538.921     58  19193.843    19216.209    19420.037
+472  FLU+I+G4      9532.239     59  19182.477    19205.690    19412.571
+484  FLU+F+G4      9501.189     77  19156.377    19198.231    19456.669
+485  FLU+F+I+G4    9496.413     78  19148.825    19191.916    19453.017
+497  rtREV+G4      9307.090     58  18730.179    18752.545    18956.373
+498  rtREV+I+G4    9302.090     59  18722.181    18745.394    18952.275
+510  rtREV+F+G4    9185.926     77  18525.853    18567.706    18826.145
+511  rtREV+F+I+G4  9181.235     78  18518.470    18561.561    18822.662
+523  cpREV+G4      9358.801     58  18833.602    18855.968    19059.796
+524  cpREV+I+G4    9351.859     59  18821.718    18844.931    19051.812
+536  cpREV+F+G4    9314.973     77  18783.945    18825.799    19084.237
+537  cpREV+F+I+G4  9307.405     78  18770.810    18813.901    19075.002
+Akaike Information Criterion:           LG+F+I+G4
+Corrected Akaike Information Criterion: LG+F+I+G4
+Bayesian Information Criterion:         LG+I+G4
+Best-fit model: LG+I+G4 chosen according to BIC
+
+All model information printed to trees/tubulin_iqtree.model.gz
+CPU time for ModelFinder: 151.362 seconds (0h:2m:31s)
+Wall-clock time for ModelFinder: 46.995 seconds (0h:0m:46s)
+Generating 1000 samples for ultrafast bootstrap (seed: 12345)...
+
+NOTE: 8 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 2.053 / Estimate: 0.000, 1.441 / LogL: -9187.508
+Init pinv, alpha: 0.013, 2.053 / Estimate: 0.061, 2.035 / LogL: -9181.342
+Init pinv, alpha: 0.026, 2.053 / Estimate: 0.059, 2.014 / LogL: -9181.371
+Init pinv, alpha: 0.039, 2.053 / Estimate: 0.061, 2.031 / LogL: -9181.347
+Init pinv, alpha: 0.052, 2.053 / Estimate: 0.060, 2.025 / LogL: -9181.354
+Init pinv, alpha: 0.065, 2.053 / Estimate: 0.065, 2.075 / LogL: -9181.323
+Init pinv, alpha: 0.079, 2.053 / Estimate: 0.068, 2.108 / LogL: -9181.342
+Init pinv, alpha: 0.092, 2.053 / Estimate: 0.067, 2.103 / LogL: -9181.338
+Init pinv, alpha: 0.105, 2.053 / Estimate: 0.068, 2.111 / LogL: -9181.347
+Init pinv, alpha: 0.118, 2.053 / Estimate: 0.067, 2.095 / LogL: -9181.332
+Optimal pinv,alpha: 0.065, 2.075 / LogL: -9181.323
+
+Parameters optimization took 2.575 sec
+Computing ML distances based on estimated model parameters... 0.171 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -9252.547
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.346 second
+Computing log-likelihood of 98 initial trees ... 1.551 seconds
+Current best score: -9181.323
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -9181.323
+Iteration 10 / LogL: -9182.597 / Time: 0h:0m:5s
+Iteration 20 / LogL: -9181.433 / Time: 0h:0m:7s
+Finish initializing candidate tree set (5)
+Current best tree score: -9181.323 / CPU time: 4.903
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -9189.435 / Time: 0h:0m:10s (0h:0m:24s left)
+Iteration 40 / LogL: -9189.422 / Time: 0h:0m:13s (0h:0m:20s left)
+Iteration 50 / LogL: -9184.191 / Time: 0h:0m:15s (0h:0m:16s left)
+Log-likelihood cutoff on original alignment: -9226.737
+Iteration 60 / LogL: -9189.144 / Time: 0h:0m:19s (0h:0m:13s left)
+Iteration 70 / LogL: -9181.435 / Time: 0h:0m:27s (0h:0m:12s left)
+Iteration 80 / LogL: -9181.376 / Time: 0h:0m:30s (0h:0m:8s left)
+Iteration 90 / LogL: -9185.234 / Time: 0h:0m:32s (0h:0m:4s left)
+Iteration 100 / LogL: -9181.343 / Time: 0h:0m:35s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -9226.737
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.996
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:35s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -9181.323
+Optimal log-likelihood: -9181.323
+Proportion of invariable sites: 0.065
+Gamma shape alpha: 2.073
+Parameters optimization took 1 rounds (0.048 sec)
+BEST SCORE FOUND : -9181.323
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.121 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file trees/tubulin_iqtree.splits.nex
+Total tree length: 6.962
+
+Total number of iterations: 102
+CPU time used for tree search: 129.830 sec (0h:2m:9s)
+Wall-clock time used for tree search: 32.843 sec (0h:0m:32s)
+Total CPU time used: 141.590 sec (0h:2m:21s)
+Total wall-clock time used: 35.804 sec (0h:0m:35s)
+
+Computing bootstrap consensus tree...
+Reading input file trees/tubulin_iqtree.splits.nex...
+30 taxa and 169 splits.
+Consensus tree written to trees/tubulin_iqtree.contree
+Reading input trees file trees/tubulin_iqtree.contree
+Log-likelihood of consensus tree: -9181.324
+
+Analysis results written to: 
+  IQ-TREE report:                trees/tubulin_iqtree.iqtree
+  Maximum-likelihood tree:       trees/tubulin_iqtree.treefile
+  Likelihood distances:          trees/tubulin_iqtree.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          trees/tubulin_iqtree.splits.nex
+  Consensus tree:                trees/tubulin_iqtree.contree
+  Screen log file:               trees/tubulin_iqtree.log
+
+Date and Time: Sun May 10 19:26:57 2026

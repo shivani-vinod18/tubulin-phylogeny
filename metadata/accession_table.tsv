@@ -1,0 +1,31 @@
+sequence_id	uniprot_accession	organism	taxonomic_group	protein_type	reviewed_status	sequence_length	included_or_removed	reason
+Arabidopsis_thaliana_alpha_tubulin_P11139	P11139	Arabidopsis thaliana	Plant	alpha	reviewed	450	included	reviewed representative alpha-tubulin; PE=2
+Arabidopsis_thaliana_beta_tubulin_P12411	P12411	Arabidopsis thaliana	Plant	beta	reviewed	447	included	reviewed representative beta-tubulin; PE=2
+Arabidopsis_thaliana_gamma_tubulin_P38557	P38557	Arabidopsis thaliana	Plant	gamma	reviewed	474	included	reviewed representative gamma-tubulin
+Caenorhabditis_elegans_alpha_tubulin_P34690	P34690	Caenorhabditis elegans	Animal	alpha	reviewed	448	included	reviewed representative alpha-tubulin
+Caenorhabditis_elegans_beta_tubulin_P12456	P12456	Caenorhabditis elegans	Animal	beta	reviewed	441	included	reviewed representative beta-tubulin
+Caenorhabditis_elegans_gamma_tubulin_P34475	P34475	Caenorhabditis elegans	Animal	gamma	reviewed	444	included	reviewed representative gamma-tubulin; PE=2
+Chlamydomonas_reinhardtii_alpha_tubulin_P09204	P09204	Chlamydomonas reinhardtii	Green alga	alpha	reviewed	451	included	reviewed representative alpha-tubulin
+Chlamydomonas_reinhardtii_beta_tubulin_P04690	P04690	Chlamydomonas reinhardtii	Green alga	beta	reviewed	443	included	reviewed representative beta-tubulin
+Chlamydomonas_reinhardtii_gamma_tubulin_Q39582	Q39582	Chlamydomonas reinhardtii	Green alga	gamma	reviewed	468	included	reviewed representative gamma-tubulin; PE=3
+Dictyostelium_discoideum_alpha_tubulin_P32255	P32255	Dictyostelium discoideum	Amoebozoa	alpha	reviewed	457	included	reviewed representative alpha-tubulin
+Dictyostelium_discoideum_beta_tubulin_P32256	P32256	Dictyostelium discoideum	Amoebozoa	beta	reviewed	455	included	reviewed representative beta-tubulin
+Dictyostelium_discoideum_gamma_tubulin_Q55AR3	Q55AR3	Dictyostelium discoideum	Amoebozoa	gamma	reviewed	462	included	reviewed representative gamma-tubulin
+Drosophila_melanogaster_alpha_tubulin_P06603	P06603	Drosophila melanogaster	Animal	alpha	reviewed	450	included	reviewed representative alpha-tubulin
+Drosophila_melanogaster_beta_tubulin_Q24560	Q24560	Drosophila melanogaster	Animal	beta	reviewed	447	included	reviewed representative beta-tubulin
+Drosophila_melanogaster_gamma_tubulin_P23257	P23257	Drosophila melanogaster	Animal	gamma	reviewed	475	included	reviewed representative gamma-tubulin
+Homo_sapiens_alpha_tubulin_Q71U36	Q71U36	Homo sapiens	Animal	alpha	reviewed	451	included	reviewed representative alpha-tubulin
+Homo_sapiens_beta_tubulin_Q9H4B7	Q9H4B7	Homo sapiens	Animal	beta	reviewed	451	included	reviewed representative beta-tubulin
+Homo_sapiens_gamma_tubulin_P23258	P23258	Homo sapiens	Animal	gamma	reviewed	451	included	reviewed representative gamma-tubulin
+Mus_musculus_alpha_tubulin_P68369	P68369	Mus musculus	Animal	alpha	reviewed	451	included	reviewed representative alpha-tubulin
+Mus_musculus_beta_tubulin_A2AQ07	A2AQ07	Mus musculus	Animal	beta	reviewed	451	included	reviewed representative beta-tubulin
+Mus_musculus_gamma_tubulin_P83887	P83887	Mus musculus	Animal	gamma	reviewed	451	included	reviewed representative gamma-tubulin
+Saccharomyces_cerevisiae_alpha_tubulin_P09733	P09733	Saccharomyces cerevisiae	Fungus	alpha	reviewed	446	included	reviewed representative alpha-tubulin
+Saccharomyces_cerevisiae_beta_tubulin_P02557	P02557	Saccharomyces cerevisiae	Fungus	beta	reviewed	457	included	reviewed representative beta-tubulin
+Saccharomyces_cerevisiae_gamma_tubulin_P53378	P53378	Saccharomyces cerevisiae	Fungus	gamma	reviewed	473	included	reviewed representative gamma-tubulin
+Schizosaccharomyces_pombe_alpha_tubulin_P04688	P04688	Schizosaccharomyces pombe	Fungus	alpha	reviewed	455	included	reviewed representative alpha-tubulin
+Schizosaccharomyces_pombe_beta_tubulin_P05219	P05219	Schizosaccharomyces pombe	Fungus	beta	reviewed	448	included	reviewed representative beta-tubulin
+Schizosaccharomyces_pombe_gamma_tubulin_P25295	P25295	Schizosaccharomyces pombe	Fungus	gamma	reviewed	446	included	reviewed representative gamma-tubulin
+Trypanosoma_brucei_complex_alpha_tubulin_P04106	P04106	Trypanosoma brucei complex	Protist/Kinetoplastid	alpha	reviewed	451	included	representative tubulin; exact-species reviewed entries limited
+Trypanosoma_brucei_complex_beta_tubulin_P04107	P04107	Trypanosoma brucei complex	Protist/Kinetoplastid	beta	reviewed	442	included	representative tubulin; exact-species reviewed entries limited
+Trypanosoma_brucei_complex_gamma_tubulin_D6XD01	D6XD01	Trypanosoma brucei complex	Protist/Kinetoplastid	gamma	unreviewed	447	included	unreviewed representative gamma-tubulin; reviewed entry unavailable
