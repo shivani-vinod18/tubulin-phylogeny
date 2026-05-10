@@ -1,130 +1,143 @@
 # Tubulin Phylogeny
 
-This repository contains a reproducible phylogenetic analysis of representative tubulin protein sequences.
+This repository contains a reproducible phylogenetic analysis of representative alpha-, beta-, and gamma-tubulin protein sequences.
 
 ## Biological Objective
 
-The objective of this analysis is to compare representative alpha-, beta-, and gamma-tubulin protein sequences across diverse eukaryotic organisms and infer their evolutionary relationships using multiple sequence alignment and maximum-likelihood phylogenetic tree construction.
+The objective of this analysis is to compare representative tubulin protein sequences across diverse eukaryotic organisms and infer evolutionary relationships among major tubulin paralog groups.
+
+## Repository Structure
+
+```text
+tubulin-phylogeny/
+│
+├── data/
+│   ├── raw/
+│   └── curated/
+│
+├── metadata/
+│   ├── accession_table.tsv
+│   └── removed_sequences.tsv
+│
+├── alignments/
+│   ├── tubulin_raw_msa.fasta
+│   └── tubulin_trimmed_msa.fasta
+│
+├── trees/
+│   ├── tubulin_iqtree.treefile
+│   ├── tubulin_iqtree.contree
+│   ├── tubulin_iqtree.iqtree
+│   └── tubulin_iqtree.log
+│
+├── figures/
+│   └── tubulin_tree_final.pdf
+│
+├── logs/
+│
+├── docs/
+│   ├── workflow.md
+│   ├── parameters.md
+│   └── biological_interpretation.md
+│
+├── scripts/
+│   └── commands.sh
+│
+└── README.md
+```
 
 ## Dataset
 
-The final curated dataset contains 30 protein sequences:
+The final curated dataset contains 30 tubulin protein sequences:
 
 - 10 alpha-tubulins
 - 10 beta-tubulins
 - 10 gamma-tubulins
 
-Sequences were selected from 10 organisms or organism groups representing animals, fungi, plants/green algae, amoebozoa, and kinetoplastids.
+Sequences were selected from organisms or organism groups representing animals, fungi, plants/green algae, amoebozoa, and kinetoplastids.
 
-Reviewed UniProtKB entries were preferred where available. Entries were selected based on correct organism or organism group, correct tubulin type, clear protein annotation, and full-length or near full-length sequence length.
+Reviewed UniProtKB entries were preferred where available. Entries were selected based on organism, tubulin type, annotation clarity, and full-length or near full-length sequence length.
 
-The curated dataset is provided in:
+Main curated dataset:
 
-- data/curated/tubulin_curated.fasta
+- `data/curated/tubulin_curated.fasta`
 
-Sequence metadata and curation records are provided in:
+Sequence metadata:
 
-- metadata/accession_table.tsv
-- metadata/removed_sequences.tsv
+- `metadata/accession_table.tsv`
 
-## Repository Structure
+Removed sequence records:
 
-text
-tubulin-phylogeny/
-├── README.md
-├── data/
-│   ├── raw/
-│   └── curated/
-├── metadata/
-├── alignments/
-├── trees/
-├── figures/
-├── logs/
-├── docs/
-└── scripts/
+- `metadata/removed_sequences.tsv`
 
+## Workflow
 
-Folder descriptions:
-
-- data/raw/: raw FASTA files downloaded from UniProtKB
-- data/curated/: final curated FASTA file used for analysis
-- metadata/: accession table and removed sequence records
-- alignments/: raw and trimmed multiple sequence alignments
-- trees/: IQ-TREE output files
-- figures/: exported phylogenetic tree figure
-- logs/: software version records and analysis logs
-- docs/: workflow, parameters, and biological interpretation
-- scripts/: command script used to reproduce the main analysis
-
-## Workflow Summary
-
-The analysis followed these steps:
+The analysis followed this workflow:
 
 1. Retrieve representative tubulin protein sequences from UniProtKB.
-2. Curate the dataset by checking organism, tubulin type, annotation quality, and sequence length.
-3. Remove non-target entries such as tubulin-associated enzymes, complex subunits, kinesin-like proteins, and unrelated proteins.
-4. Standardize FASTA headers for readability and downstream analysis.
-5. Align the curated protein sequences using MAFFT.
-6. Trim the raw alignment using trimAl.
-7. Construct a maximum-likelihood phylogenetic tree using IQ-TREE.
-8. Visualize the final tree using FigTree.
+2. Curate the dataset and remove non-target entries.
+3. Standardize FASTA headers.
+4. Perform multiple sequence alignment using MAFFT.
+5. Trim the alignment using trimAl.
+6. Construct a maximum-likelihood phylogenetic tree using IQ-TREE.
+7. Visualize the final tree using FigTree.
 
-Detailed workflow notes are provided in:
+Detailed workflow documentation:
 
-- docs/workflow.md
+- `docs/workflow.md`
 
-Commands and parameters are provided in:
+Commands and parameters:
 
-- docs/parameters.md
-- scripts/commands.sh
+- `docs/parameters.md`
+- `scripts/commands.sh`
 
-## Main Input and Output Files
+## Input and Output
 
 Main input:
 
-- data/curated/tubulin_curated.fasta
+- `data/curated/tubulin_curated.fasta`
 
 Main outputs:
 
-- alignments/tubulin_raw_msa.fasta
-- alignments/tubulin_trimmed_msa.fasta
-- trees/tubulin_iqtree.treefile
-- trees/tubulin_iqtree.contree
-- figures/tubulin_tree_final.pdf
+- `alignments/tubulin_raw_msa.fasta`
+- `alignments/tubulin_trimmed_msa.fasta`
+- `trees/tubulin_iqtree.treefile`
+- `trees/tubulin_iqtree.contree`
+- `figures/tubulin_tree_final.pdf`
 
 ## Tools Used
 
-- UniProtKB for protein sequence retrieval
-- MAFFT for multiple sequence alignment
-- trimAl for alignment trimming
-- IQ-TREE for maximum-likelihood phylogenetic tree construction
-- FigTree for tree visualization
+- UniProtKB
+- MAFFT
+- trimAl
+- IQ-TREE
+- FigTree
 
-The best-fit model selected by IQ-TREE was:
+IQ-TREE selected the following best-fit model:
 
-- LG+I+G4
+- `LG+I+G4`
+
+## Special Rules
+
+One representative alpha-, beta-, and gamma-tubulin sequence was selected per organism or organism group where possible.
+
+Non-target entries such as tubulin-associated enzymes, gamma-tubulin complex subunits, kinesin-like proteins, and unrelated proteins were excluded.
+
+The Trypanosoma entries were labelled as `Trypanosoma_brucei_complex` because exact-species reviewed entries were limited.
 
 ## Results Summary
 
 The maximum-likelihood tree broadly separated the curated sequences into alpha-, beta-, and gamma-tubulin groups. This supports the interpretation that these tubulin types represent distinct paralogous groups within the tubulin protein family.
 
-Some internal relationships had moderate or low support and were interpreted cautiously. The Trypanosoma entries were also interpreted cautiously because exact-species reviewed entries were limited, and the gamma-tubulin entry was unreviewed.
+Some internal relationships had moderate or low support and were interpreted cautiously.
 
-Full biological interpretation is provided in:
+Full biological interpretation:
 
-- docs/biological_interpretation.md
-
-## Special Notes
-
-One representative alpha-, beta-, and gamma-tubulin sequence was selected per organism or organism group where possible to avoid overrepresentation of species with multiple paralogs.
-
-The Trypanosoma entries were labelled as Trypanosoma_brucei_complex because exact-species reviewed entries were limited.
+- `docs/biological_interpretation.md`
 
 ## Reproducibility
 
-All input files, intermediate files, output files, metadata tables, logs, tree files, and the final exported figure are included in this repository.
-
 To reproduce the main analysis, run:
 
-bash
+```bash
 bash scripts/commands.sh
+```
