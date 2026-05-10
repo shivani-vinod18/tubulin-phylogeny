@@ -20,24 +20,24 @@ Reviewed UniProtKB entries were preferred where available. Entries were selected
 
 The curated FASTA file is:
 
-- `data/curated/tubulin_curated.fasta`
+- data/curated/tubulin_curated.fasta
 
 Sequence metadata and curation records are provided in:
 
-- `metadata/accession_table.tsv`
-- `metadata/removed_sequences.tsv`
+- metadata/accession_table.tsv
+- metadata/removed_sequences.tsv
 
 ## Repository Structure
 
-- `data/raw/`: raw downloaded FASTA files
-- `data/curated/`: curated FASTA dataset used for analysis
-- `metadata/`: accession table and removed sequence records
-- `alignments/`: raw and trimmed multiple sequence alignments
-- `trees/`: IQ-TREE output files
-- `logs/`: software version records and run logs
-- `docs/`: workflow, parameters, and biological interpretation
-- `figures/`: exported phylogenetic tree figure
-- `scripts/`: commands used to reproduce the analysis
+- data/raw/: raw downloaded FASTA files
+- data/curated/: curated FASTA dataset used for analysis
+- metadata/: accession table and removed sequence records
+- alignments/: raw and trimmed multiple sequence alignments
+- trees/: IQ-TREE output files
+- logs/: software version records and run logs
+- docs/: workflow, parameters, and biological interpretation
+- figures/: exported phylogenetic tree figure
+- scripts/: commands used to reproduce the analysis
 
 ## Workflow
 
@@ -53,29 +53,29 @@ The analysis followed this workflow:
 
 The main commands used for alignment, trimming, and tree construction are provided in:
 
-- `scripts/commands.sh`
-- `docs/parameters.md`
+- scripts/commands.sh
+- docs/parameters.md
 
 ## Main Output Files
 
 Raw multiple sequence alignment:
 
-- `alignments/tubulin_raw_msa.fasta`
+- alignments/tubulin_raw_msa.fasta
 
 Trimmed multiple sequence alignment:
 
-- `alignments/tubulin_trimmed_msa.fasta`
+- alignments/tubulin_trimmed_msa.fasta
 
 Main tree files:
 
-- `trees/tubulin_iqtree.treefile`
-- `trees/tubulin_iqtree.contree`
-- `trees/tubulin_iqtree.iqtree`
-- `trees/tubulin_iqtree.log`
+- trees/tubulin_iqtree.treefile
+- trees/tubulin_iqtree.contree
+- trees/tubulin_iqtree.iqtree
+- trees/tubulin_iqtree.log
 
 Final tree figure:
 
-- `figures/tubulin_tree_final.pdf`
+- figures/tubulin_tree_final.pdf
 
 ## Results Summary
 
@@ -85,7 +85,7 @@ Some internal relationships had moderate or low support and were interpreted cau
 
 Full biological interpretation is provided in:
 
-- `docs/biological_interpretation.md`
+- docs/biological_interpretation.md
 
 ## Reproducibility
 
@@ -93,7 +93,5 @@ All input files, intermediate files, output files, metadata tables, logs, tree f
 
 To reproduce the main analysis, run:
 
-```bash
+bash
 bash scripts/commands.sh
-```
-
