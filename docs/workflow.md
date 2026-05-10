@@ -60,6 +60,10 @@ Sequences will be checked for:
 
 Only suitable sequences will be retained in the final curated FASTA file.
 
+## Domain-related considerations
+
+Only full-length or near full-length tubulin protein sequences were retained. No separate domain extraction was performed because the selected UniProt entries were annotated as alpha-, beta-, or gamma-tubulin proteins and had sequence lengths consistent with expected full-length tubulin proteins. Entries representing tubulin-associated proteins or tubulin-modifying enzymes were excluded.
+
 ## 4. Multiple Sequence Alignment
 
 The curated protein sequences will be aligned using MAFFT.
