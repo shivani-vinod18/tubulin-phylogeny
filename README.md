@@ -79,7 +79,7 @@ The analysis followed this workflow:
 4. Perform multiple sequence alignment using MAFFT.
 5. Trim the alignment using trimAl.
 6. Construct a maximum-likelihood phylogenetic tree using IQ-TREE.
-7. Visualize the final tree using FigTree.
+7. Visualize the final annotated tree using iTOL .
 
 Detailed workflow documentation:
 
@@ -110,7 +110,7 @@ Main outputs:
 - MAFFT
 - trimAl
 - IQ-TREE
-- FigTree
+- iTOL
 
 IQ-TREE selected the following best-fit model:
 
