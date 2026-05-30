@@ -37,6 +37,7 @@ tubulin-phylogeny/
 ├── docs/
 │   ├── workflow.md
 │   ├── parameters.md
+│   ├── Phylogenetic_Analysis_of_Tubulin_writeup .pdf
 │   └── biological_interpretation.md
 │
 ├── scripts/
