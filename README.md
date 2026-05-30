@@ -30,7 +30,7 @@ tubulin-phylogeny/
 │   └── tubulin_iqtree.log
 │
 ├── figures/
-│   └── tubulin_tree_final.pdf
+│   └── tubulin_tree_rooted_annotated_iTOL.pdf
 │
 ├── logs/
 │
